@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="icon" type="text/css" href="logo.png">
+	<link rel="stylesheet" type="text/css" href="b1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script:wght@667&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 style=" color: #a9e2f3 ; text-shadow: 6px 6px 6px #688a08;font-family:'New Rocker'; font-style: italic;">BOOKING</h1><br>
+	<div class="register">
+		<form method="post" id="register" action="">
+		<h2 align="center"style="color: white;font-family: 'Dancing Script', cursive; font-size: 42px;">Register here..!</h2><br>
+		<label>First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+		<input type="text" name="fname" id="name" style="font-style: italic;" placeholder="Enter Your First name(10-30 characters)" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label>Last Name &nbsp;&nbsp;:</label>
+		<input type="text" name="lname" id="name"style="font-style: italic;"placeholder="Enter Your Last name"required><br><br>
+		<label>Mobile Number :</label>
+		<select id="ph" name="phonecode"required>
+			<option value="ind">+91</option>
+			<option value="pak">+135</option>
+			<option value="usa">+914</option>
+			<option value="aus">+101</option>
+			<option value="uk">+85</option>
+		</select>
+		<input type="number" name="Mnum" id="num" style="font-style: italic;" placeholder="Enter Your Mobile Number"required><br><br>
+		<label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;:</label>
+		<input type="email" name="email" id="ename"style="font-style: italic;" placeholder="Enter Your Email"required><br><br>
+		<label>Arrival Date &emsp;&nbsp;&nbsp;:</label>
+		<input type="Date" name="Adate" id="date" style="font-style: italic;"placeholder="DD/MM/YYYY"required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;
+		<label>Departure Date &nbsp;&nbsp;&nbsp;&nbsp;:</label>
+		<input type="Date" name="Ddate" id="date"style="font-style: italic;" placeholder="DD/MM/YYYY"required><br><br>
+		<label>Room Type &ensp;&emsp;&nbsp;:</label>
+		<select id="rt" name="rt"required>
+			<option selected hidden value="">--select--</option>
+			<option value="s">Single Cot</option>
+			<option value="d">Double Cot</option>
+		</select><br><br>
+		<label>No.Of.Adults &ensp;&nbsp;&nbsp;:</label>
+		<input type="number" name="noa" id="noa"style="font-style: italic;" placeholder="Enter The No.Of.Adults"required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label>No.Of.Childrens &nbsp;&nbsp;:</label>
+		<input type="number" name="noc" id="noc"style="font-style: italic;" placeholder="Enter The No.Of.Childrens"required><br><br>
+		<label>Coupon Code&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+		<input type="text" name="cd" id="cd"style="font-style: italic;" placeholder="Enter The Coupon Code (6-digit)"required><br><br>
+		<label>Residence&ensp;&emsp;&nbsp;&ensp;&nbsp;:</label>
+		<select name="r" id="hn" style="font-style: italic;"required>
+			<option selected hidden value="">--select--</option>
+			<option value="sd">Sinclair's Darjeeling</option>
+			<option value="ud">Udaan Darjeeling</option>
+			<option value="md">Mayfair Darjeeling</option>
+		</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;
+		<label>Restaurants&nbsp;&ensp;&nbsp;:</label>
+		<select name="rest" id="rn" style="font-style: italic;"required>
+			<option>--select--</option>
+			<option value="g">Glenary's</option>
+			<option value="l">Lazeez Affaire</option>
+			<option value="h">Hotel Lunar</option>
+		</select><br><br>
+		<label>Questions/comments :</label><br><br>
+		&emsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;	
+		<textarea name="qc" id="qc" cols="80" rows="10"style="font-style: italic;" placeholder="Please enter your comments here...."></textarea><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;
+		<button style="background: #688A08; font-style: italic;" type="button" id="btn1">submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button style="background: #688A08; font-style: italic" id="btn">reset</button>&nbsp;&nbsp;&nbsp;
+		</form>
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+    	$("#btn1").click(function(){
+    		var fname=$("#name").val();
+    		var lname=$("#name").val();
+    		var Mnum=$("#num").val();
+    		var email=$("#ename").val();
+    		var Adate=$("#date").val();
+    		var Ddate=$("#date").val();
+    		var noa=$("#noa").val();
+    		var noc=$("#noc").val();
+    		var cd=$("#cd"). val();
+    		var r=$("#hn"). val();
+    		var rest=$("#rn"). val();
+
+    		if(fname == '' || email == '' || lname == '' || Mnum == '' || Adate == '' || Ddate == '' || noa == '' || noc == '' || r == ''|| rest == '' ){
+    					swal({
+  								title: "Fields Empty😢😢",
+  								text: "Please Check The Missing Field!!",
+  								icon: "warning",
+  								button: "Ok",
+							});
+    		}else{
+    			swal({
+  						title: "Booked Successfully😁😁",
+  						text: "Enjoy Your Tour With Our Travels",
+ 					    icon: "success",
+  						button: "Ok",
+					});
+    		}			
+    		
+    	});                    
+    </script>
+
+</body>
